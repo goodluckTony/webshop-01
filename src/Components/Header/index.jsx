@@ -1,13 +1,6 @@
-import { createUseStyles } from "react-jss";
- const useStyles = createUseStyles ({
-  productForm: {
-
-  }
- })
-
 const Header = () => {
   return (
-    <div className={classes.productForm} >
+    <div className="header">
       <p>Header</p>
     </div>
   )

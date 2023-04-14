@@ -1,17 +1,20 @@
-import Header from "./Components/Header/index"
-import './App.css';
+import Header from "./Components/Header";
+import Menu from "./Components/Menu";
+import Content from "./Components/Content";
+import Footer from "./Components/Footer";
+import "./styles.css";
 
 function App() {
   return (
     <div className="shop">
       <Header />
       <div className="body">
-        <div className="menu"></div>
-        <div className="content"></div>
+        <Menu />
+        <Content />
       </div>
-      <div className="footer"></div>
+      <Footer />
     </div>
   );
-}
+};
 
 export default App;
