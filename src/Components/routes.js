@@ -1,6 +1,8 @@
 import Products from "../pages/Products";
 import Contacts from "../pages/Contacts";
 import Counters from "../pages/Counters";
+import LifeCycleTest from "../pages/LifeCycleTest";
+import MovieSearch from "../pages/MovieSearch";
 
       /* <a href="/products">Products</a>
       <a href="/products/3456">Product Detail</a>
@@ -25,5 +27,15 @@ export const routes = [
     path: '/counters',
     label: 'Counters',
     component: Counters
+  },
+  {
+    path: '/life-cycle-test',
+    label: 'Life-cycle-test',
+    component: LifeCycleTest
+  },
+  {
+    path: '/MovieSearch',
+    label: 'Movie Search',
+    component: MovieSearch
   },
 ];

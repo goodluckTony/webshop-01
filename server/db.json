@@ -1,0 +1,15 @@
+{
+  "products": [
+    {
+      "name": "asdasd",
+      "price": 1234,
+      "count": 12,
+      "color": "gray",
+      "insurance": true,
+      "software": false,
+      "img": "phone",
+      "id": 1
+    }
+  ],
+  "cart": []
+}
