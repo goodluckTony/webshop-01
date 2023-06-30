@@ -2,7 +2,7 @@
 import laptop from "../assets/laptop.jpg";
 import phone from "../assets/phone.jpg";
 import { createUseStyles } from "react-jss";
-import { deleteProduct } from "../utils/productsApi";
+// import { deleteProduct } from "../utils/productsApi";
 
 import {IconButton} from '@mui/material';
 import Card from '@mui/material/Card';
@@ -36,8 +36,8 @@ const images = {
 
 
 const ProductItem = ({ product, onDelete }) => {
-const classes = useStyles(15);
-const handleDelete = () => onDelete(product.id);
+  const classes = useStyles(15);
+  const handleDelete = () => onDelete(product.id);
 
   return(
     <li className={classes.item}>

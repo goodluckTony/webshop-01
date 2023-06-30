@@ -19,7 +19,7 @@ export const routes = [
     component: Products
   },
   {
-    path: 'contacts',
+    path: '/contacts',
     label: 'Contacts',
     component: Contacts
   },
@@ -35,7 +35,7 @@ export const routes = [
   },
   {
     path: '/MovieSearch',
-    label: 'Movie Search',
+    label: 'Movie-Search',
     component: MovieSearch
   },
 ];

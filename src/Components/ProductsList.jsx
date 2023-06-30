@@ -14,7 +14,7 @@ const ProductList = ({ products, onDelete }) => {
 
   return(
     <ul>
-      {products.map((product) => 
+      {products.map((product) =>  
         product.count ? (
         <ProductItem 
           // removeProduct={removeProduct} 

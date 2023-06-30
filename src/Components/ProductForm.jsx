@@ -51,7 +51,7 @@ const ProductForm = ({ onSubmit }) => {
     // if (hasEmptyField) return;
 
     const newItem = {
-      // id: Date.now(),
+  
       name,
       price: Number(price),
       count: Number(count),

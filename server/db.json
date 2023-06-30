@@ -1,14 +1,24 @@
 {
   "products": [
     {
+      "id": 1683897373478,
       "name": "asdasd",
-      "price": 1234,
+      "price": 234234,
+      "count": 1123,
+      "color": "white",
+      "insurance": true,
+      "software": false,
+      "img": "phone"
+    },
+    {
+      "name": "qqq",
+      "price": 123,
       "count": 12,
       "color": "gray",
       "insurance": true,
-      "software": false,
+      "software": true,
       "img": "phone",
-      "id": 1
+      "id": 1683897373479
     }
   ],
   "cart": []

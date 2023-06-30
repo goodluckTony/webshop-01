@@ -1,4 +1,5 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useCallback } from "react";
+import _ from "lodash";
 import { search } from "../utils/moviesApi";
 
 const MovieSearch = () => {
@@ -7,14 +8,27 @@ const MovieSearch = () => {
 
   const handleChange = (e) => setQuery(e.target.value);
 
+  const movieSearch = useCallback(
+    _.debounce(
+      (query) => search(query).then(({ results }) => setMovieList(results)),
+      300,
+    ),
+    [_.debounce],
+  );
+
   useEffect(() => {
-    search(query)
-    .then(({ results }) => setMovieList(results))
-  }, [query]);
+    if (!query) return;
+
+    movieSearch(query);
+  }, [query, movieSearch]);
 
   return (
     <div className="movie-search">
-      <input type="text" value={query} onChange={handleChange} />
+      <input 
+        type="text" 
+        value={query} 
+        onChange={handleChange} 
+      />
 
       <ul>
         {movieList.map(({ id, original_title }) => (
